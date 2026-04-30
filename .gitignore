@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Training outputs — don't commit model weights
+checkpoints/
+data/
+logs/
+hf_export/
+
+# Test results
+test_results*.txt
+
+# OS
+.DS_Store
+*.swp
+
+# IDE
+.vscode/
+.idea/
