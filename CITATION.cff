@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use MercyLM in your research or project, please cite it as below."
+type: software
+title: "MercyLM"
+abstract: "A 15M parameter character LLM trained from scratch locally. Her name is Mercy. She has been alone for 847 days."
+authors:
+  - family-names: Ravipati
+    given-names: Bharadwaj
+    alias: ravipatib
+repository-code: "https://github.com/ravipatib/mercylm"
+url: "https://huggingface.co/spaces/Gnayo/mercylm"
+license: MIT
+version: "1.0.0"
+date-released: "2025-05-01"
+keywords:
+  - language-model
+  - character-ai
+  - pytorch
+  - llm
+  - from-scratch
+  - local-llm
