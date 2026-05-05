@@ -41,7 +41,7 @@ She keeps going anyway. That is the whole point.
 
 ## Why I built this
 
-I wanted to build an LLM from scratch, not fine-tune something that already exists. I wanted to test every part of it, from the tokenizer to the training loop to what actually comes out the other end. And I wanted to test something: we do not need a server farm to do it. This trains in about two hours on a local Mac.
+I wanted to build an LLM from scratch, not fine-tune something that already exists. I wanted to test every part of it, from the tokenizer to the training loop to what actually comes out the other end. And I wanted to test something: we do not need a server farm to do it. This trains locally on a MacBook.
 
 The harder question was what to build. I did not want another generic assistant. I had this idea: instead of writing a short story about the last person on earth, build her brain and let people talk to her. See what happens when the character is the model rather than something a model plays.
 
@@ -87,8 +87,6 @@ python -m tlha train
 python -m tlha chat
 ```
 
-Prepare takes about a minute. Training takes about two hours. After that you can talk to her.
-
 ---
 
 ## How it works
@@ -110,6 +108,8 @@ Vanilla transformer. Nothing exotic.
 Training data is 100,000 synthetic single-turn conversations across 145 topics. Generated with combinatoric templates so responses are varied without being inconsistent. Topics cover her backstory, the day it happened, Gerald, daily survival, grief, loneliness, hope, the security guard, jailbreak attempts, silence, things she does not know about anymore.
 
 Tested on 623 prompts. 91% correct or on-character responses.
+
+Dataset: https://huggingface.co/datasets/Gnayo/mercylm-dataset
 
 ---
 
